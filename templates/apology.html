@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>You Are Here</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="../static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/creative.css" rel="stylesheet">
+
+    <!-- http://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md -->
+    <script src="https://cdn.rawgit.com/corejavascript/typeahead.js/master/dist/typeahead.jquery.js"></script>
+
+    <!-- http://handlebarsjs.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+    <style>
+      body {
+        background-color: #fc4f53;
+      }
+    </style>
+</head>
+<body>
+    <!--<img alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://i.imgur.com/CsCgN7Ll.png"/>-->
+    <h1 style="text-align:center; padding-top:25%;">{{ top | urlencode }}/{{ bottom | urlencode }}</h1>
+</body>

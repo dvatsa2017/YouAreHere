@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>You Are Here</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="../static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/creative.css" rel="stylesheet">
+
+    <!-- http://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md -->
+    <script src="https://cdn.rawgit.com/corejavascript/typeahead.js/master/dist/typeahead.jquery.js"></script>
+
+    <!-- http://handlebarsjs.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+</head>
+<body>
+    <form action="/sign_up" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password"/>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Password confirmation" type="password"/>
+        </div>
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+    </form>
+</body>

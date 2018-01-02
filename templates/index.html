@@ -1,0 +1,209 @@
+<!-- Template taken from Bootstrap's free template downloads (including css and javascript files for formatting) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>You Are Here</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link href="../static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../static/css/creative.css" rel="stylesheet">
+
+    <!-- App's own CSS -->
+    <!-- <link href="../static/styles.css" rel="stylesheet"/>-->
+
+    <!-- https://developers.google.com/maps/documentation/javascript/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ key | urlencode }}&v=3.exp"></script>
+
+    <!-- http://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!--http://getbootstrap.com/ -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <!-- https://github.com/corejavascript/typeahead.js/blob/master/doc/jquery_typeahead.md -->
+    <script src="https://cdn.rawgit.com/corejavascript/typeahead.js/master/dist/typeahead.jquery.js"></script>
+
+    <!-- http://handlebarsjs.com/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key={{ key | urlencode }}&libraries=places&callback=initAutocomplete&v=3.exp" async defer></script> -->
+
+    <!-- app's own JavaScript -->
+    <script src="../static/scripts.js"></script>
+</head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">You Are Here</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <!--<a class="nav-link js-scroll-trigger" href="#resources">Resources</a>-->
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item js-scroll-trigger" href="#resources">List of Resources</a>
+                <a class="dropdown-item" href="/sign_in">Log In</a>
+                <a class="dropdown-item" href="/sign_up">Sign Up</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="/map" target="_blank">Map</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>You Are Here<img src="../static/img/mapicon.png"></strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Get Connected with a Community of Support</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">Mission</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">We aim to serve as an all-in-one resource page for homeless individuals in Boston. Our goal is to create a cohesive community of support for these individuals no matter where they are in the city.</p>
+            <img src="../static/img/about.png">
+            <h2 class="section-heading text-white">Project</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">Through an up-to-date map of resources in Boston, we provide individuals with an understanding of the support near them. The resources mapped out are currently in 3 categories: shelters, food, and skill training facilities. We also allow for shelters to log in to our website, in order to dynamically update the resources that they provide on the site as well as hotline numbers and capacity limits. </p>
+
+            <a class="btn btn-light btn-xl js-scroll-trigger" href="/map" target="_blank">To the Map</a>
+            <!--<p style="color:black;"><a href="index.html" class="portfolio-box" target="_blank">Testing</p>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Resources Overview</h2>
+            <hr class="my-4">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-home text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Shelters</h3>
+              <p class="text-muted mb-0">These are facilities that include overnight residence, bathrooms, and other amenities.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-cutlery text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Food</h3>
+              <p class="text-muted mb-0">Learn about the kitchens and food services near you.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-wrench text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Skills Training</h3>
+              <p class="text-muted mb-0">Get connected with skills training facilities to set you up for success.</p>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="row" style="padding-top:50px;">
+          <div class="col-lg-6 text-center">
+            <h3 class="mb-3">New Resource Providers</h3>
+            <a class="btn btn-xl js-scroll-trigger" href="/sign_up">Sign-Up</a>
+          </div>
+          <div class="col-lg-6 text-center">
+            <h3 class="mb-3">Returning Resource Providers</h3>
+            <a class="btn btn-xl js-scroll-trigger" href="/sign_in">Log-In</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">Interested in partnering with us or have any other questions about our platform? We would love to hear from you!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:dvatsa@college.harvard.edu">dvatsa@college.harvard.edu</a> | <a href="mailto:pnadella@college.harvard.edu">pnadella@college.harvard.edu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white" style="padding-bottom:50px;">
+      <p class="text-center" style="padding-top:25px;">Made with love by Divya Vatsa and Pranay Nadella :)</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../static/vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../static/js/creative.min.js"></script>
+
+  </body>
+</html>
