@@ -2,7 +2,7 @@
 
 # 1. Viewing Our Application
 Because we are currently developing our platform, **You Are Here** is currently not hosted on any public server. We are tracking our progress through local servers and are excited to publish our application soon!
-> You can view what our application currently looks like through the [video component](insert link) of our application.
+> You can view what our application currently looks like through the [video component](https://www.google.com) of our application.
 
 # 2. Our Functionality
 Our `Home` page is a scrolling website that includes tabs to different features of the website: `About`, `Resources`, `Map`, `Contact`.
